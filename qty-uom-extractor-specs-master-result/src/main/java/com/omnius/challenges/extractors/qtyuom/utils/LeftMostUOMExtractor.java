@@ -62,8 +62,8 @@ public class LeftMostUOMExtractor implements QtyUomExtractor {
     	int m=1;
     	String wordQTY = "";
     	for(int i = 0; i < words.length; i++){
-    		if(words[i].equals("stã¼ck")){
-    			words[i]="stÃ¼ck";
+    		if(words[i].equals("st�ck")){
+    			words[i]="stück";
     		}
     		for(int j = 0; j < UOM.length; j++){    			
     			if(words[i].equals(UOM[j])){   				 

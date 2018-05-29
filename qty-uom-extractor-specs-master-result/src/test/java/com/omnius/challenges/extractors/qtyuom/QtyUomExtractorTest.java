@@ -212,7 +212,7 @@ public class QtyUomExtractorTest extends Assert{
     }
     
     @Test
-    public void computeAccuracy_checkIsHigherThan20Percent() {
+    public void computeAccuracy_checkIsHigherThan20Percent() throws IOException{
         // Load provided CSV
         // For each line in the CSV run the LeftMostUOMExtractor
         // calculate how many corrected guess your algorithm compute
@@ -224,7 +224,7 @@ public class QtyUomExtractorTest extends Assert{
     	float total = 0;
     	float accuracy = 0;
     	QtyUomExtractor matcher = new LeftMostUOMExtractor();
-			BufferedReader br = new BufferedReader(new FileReader(workingDir+"/src/test/resources/qty_uom_challenge_dataset_clean.csv"));
+			BufferedReader br = new BufferedReader(new FileReader(workingDir+"/src/src/test/resources/qty_uom_challenge_dataset_clean.csv"));
 		    while ((line = br.readLine()) != null) {
 		      values = line.split("\",\"");
 		      String lineText = values[0];
