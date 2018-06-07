@@ -1,4 +1,4 @@
-# Solution-for-omnius-interview-task
+# Solution-for-text-mining-task
 Solution java code
 
 forked the repository
